@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* background-color: aqua; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png"); */
+}
+
+
+
+/* Header styles */
+header {
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set text color */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    /* z-index: 2; */
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  li:last-child {
+    margin-right: 0; /* Remove right margin for the last list item */
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #fff; /* Set link color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  li a:hover {
+    color: #ff6600; /* Change link color on hover */
+  }
+  
+
+.home{
+    height: 90vh;
+    width: 100vw;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.home-content{
+  display: flex;
+  margin-top: 1rem;
+}
+
+.home-left{
+  width: 50vw;
+  height: 85vh;
+}
+
+.home-left h1{
+    width: 50vw;
+    height: 42.5vh;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    font-size: 60px;
+}
+
+.home-left p{
+    width: 50vw;
+    height: 42.5vh;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    font-size: 30px;
+}
+
+.home-right{
+  width: 42vw;
+  height: 85vh;
+    background-image: url(../public/assets/toonpic.jpeg);
+    background-size: contain;
+    z-index: 3;
+    border-radius: 50%;
+}
+
+/* .avatar {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  } */
+
+.tile{
+    height: 50vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+}
+
+.minitile-area{
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.minitile {
+  width: 200px; 
+  height: 200px;  
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  /* color: #fff;  */
+  text-align: center;
+  padding: 20px;
+  margin: 10px; 
+  display: inline-block; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  background-color: white;
+  /* opacity: 0.5; */
+  position: relative;
+  /* background-size: 16vw 19vh;
+  background-position: bottom; */
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+.minitile h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  /* opacity: 1; */
+  /* color: white; */
+}
+
+
+.minitile p {
+  font-size: 1rem;  
+  margin: 0;
+  /* opacity: 1; */
+}
+
+
+/* Contact Form styles */
+.contact-area{
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.contact-form {
+    /* text-align: center; */
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 4rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    background-color: white;
+    
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  /* form {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 98%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button {
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 35rem;
+  }
+  
+  button:hover {
+    background-color: #005d99;
+  }
+  
+
+/* Footer styles */
+.footer {
+  background-color: #333; /* Set your desired background color */
+  color: #fff; /* Set text color */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff; /* Set logo text color */
+}
+
+/* Footer links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-links ul li {
+  margin: 0 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff; /* Set link color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600; /* Change link color on hover */
+}
+
+/* Footer social icons */
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #fff; /* Set icon color */
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff6600; /* Change icon color on hover */
+}
+
+/* Footer copyright */
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
