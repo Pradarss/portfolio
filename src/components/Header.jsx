@@ -1,6 +1,6 @@
 // Header.js
 import React from 'react';
-import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
+import {  Typography, IconButton } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';

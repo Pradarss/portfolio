@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Card } from "@mui/material";
+import {  Card } from "@mui/material";
 
 // export const MinitileArea = styled(Box)(({theme})=>({
 //     display: "flex",
