@@ -1,3 +1,5 @@
+import {StyledMiniTile} from '../styles/MinitileStyles'
+
 function MiniTile(props){
 
     
@@ -9,13 +11,13 @@ function MiniTile(props){
       console.log(decodedImageUrl)
 
     return(
-        <div>
-        <div className="minitile"  style={tileStyle}>
+        <StyledMiniTile style={tileStyle}>
+        <div className="minitile"  >
         {/* <div className="overlay"></div> */}
             <h1>{props.title}</h1>
             <p>{props.para}</p>
         </div>
-        </div>
+        </StyledMiniTile>
     )
 }
 

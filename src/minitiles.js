@@ -1,8 +1,8 @@
 export const projects = [
     {
       image: 'url("https://clickup.com/blog/wp-content/uploads/2019/01/to-do-list-apps.png")',
-      title: 'ToDo List',
-      para: 'A simple to-do list app to keep track of tasks.',
+      title: 'Trello',
+      para: 'A task management app to keep track of tasks.',
     },
   
     {

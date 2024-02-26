@@ -29,7 +29,7 @@ export const InputStyle = {
     width: '98%',
     padding: 10,
     marginTop: 5,
-    border: '1px solid #ccc',
+    // border: '1px solid #ccc',
     borderRadius: 5,
 }
 

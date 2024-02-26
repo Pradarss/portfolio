@@ -19,3 +19,22 @@ export const StyledCards = styled(Card)(({theme})=>({
     textAlign: "center",
     border: "1px solid black"
 }));
+
+export const StyledMiniTile = styled(Card)({
+    width: '250px',
+    height: '250px',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    textAlign: 'center',
+    border: '1px solid black',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '20px',
+    transition: 'opacity 0.3s ease',
+    '&:hover': {
+      opacity: 0.8,
+    },
+  });

@@ -1,6 +1,8 @@
+// Contact.js
 import React, { useState } from 'react';
+import { Box, Typography, TextField, Button } from '@mui/material';
 
-function Contact() {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,63 +25,58 @@ function Contact() {
   };
 
   return (
-    <div className='contact-area'>
-    <div className="contact-form">
-      <h2>Contact Me</h2>
+    <Box style={{ padding: '20px', justifyContent: 'center', alignItems: 'center', display: 'grid' }}>
+      <Typography variant="h4" gutterBottom style={{display: 'flex', justifyContent: 'center'}}>Contact Me</Typography>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+        <TextField
+          fullWidth
+          label="Name"
+          // variant="outlined"
+          margin="normal"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <TextField
+          fullWidth
+          label="Email"
+          // variant="outlined"
+          margin="normal"
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <TextField
+          fullWidth
+          label="Subject"
+          // variant="outlined"
+          margin="normal"
+          name="subject"
+          value={formData.subject}
+          onChange={handleChange}
+          required
+        />
+        <TextField
+          fullWidth
+          multiline
+          rows={4}
+          label="Message"
+          // variant="outlined"
+          margin="normal"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
+        <div >
+        <Button type="submit" variant="contained" color="primary" style={{left: '50vh'}}>Submit</Button>
         </div>
-
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="subject">Subject</label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <button type="submit">Submit</button>
       </form>
-    </div>
-    </div>
+    </Box>
   );
 }
-
 
 export default Contact;
