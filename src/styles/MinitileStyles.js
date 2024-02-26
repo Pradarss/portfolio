@@ -17,7 +17,7 @@ export const StyledCards = styled(Card)(({theme})=>({
     backgroundPosition: "center",
     // opacity: "50%",
     textAlign: "center",
-    border: "1px solid black"
+    // border: "1px solid black"
 }));
 
 export const StyledMiniTile = styled(Card)({
@@ -27,7 +27,6 @@ export const StyledMiniTile = styled(Card)({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     textAlign: 'center',
-    border: '1px solid black',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -37,4 +36,5 @@ export const StyledMiniTile = styled(Card)({
     '&:hover': {
       opacity: 0.8,
     },
+    borderRadius: '10%',
   });

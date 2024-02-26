@@ -20,7 +20,7 @@ function Tile(props){
   console.log("data:", data);
 
     return(
-      <div >
+      <div style={{borderBottom:'2px solid black', paddingBottom: '5rem'}}>
         <div className="tile">
           <h1 >{props.title}</h1>
         </div>
