@@ -13,7 +13,6 @@ function MiniTile(props){
     return(
         <StyledMiniTile style={tileStyle}>
         <div className="minitile"  >
-        {/* <div className="overlay"></div> */}
             <h1>{props.title}</h1>
             <p>{props.para}</p>
         </div>

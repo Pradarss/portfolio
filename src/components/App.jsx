@@ -11,7 +11,6 @@ function App(){
         <div>
         <Header />
         <Home />
-        {/* <Tile /> */}
         {tiles.map((tile, index) => (
         <Tile key={index} title={tile} />
       ))}

@@ -17,6 +17,7 @@ header {
 header h1 {
   font-size: 2rem;
   margin: 0;
+  text-decoration: underline;
 }
 
 ul {
@@ -52,7 +53,8 @@ li a:hover {
 
 .home-content {
   display: flex;
-  margin-top: 1rem;
+  padding: 1rem;
+  border-bottom: 2px dotted black;
 }
 
 .home-left, .home-right {
@@ -69,15 +71,39 @@ li a:hover {
   font-size: 60px;
 }
 
-.home-left div {
+.home-left p{
   align-items: flex-start;
   font-size: 30px;
   width: 50vw;
-  height: 42.5vh;
   justify-content: center;
-  /* align-items: flex-end; */
   display: flex;
-  /* font-size: 60px; */
+}
+
+.home-left a{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007acc;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.home-left a:hover {
+  background-color: #005d99;
+}
+
+.home-left div{
+  height: 33.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
 }
 
 .home-right {
@@ -88,7 +114,19 @@ li a:hover {
   border-radius: 50%;
 }
 
-.tile, .minitile-area {
+.tile{
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tile h1{
+  text-decoration: underline;
+}
+
+.minitile-area {
   height: 50vh;
   width: 100vw;
   display: flex;
@@ -103,15 +141,6 @@ li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
   position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .minitile h1 {

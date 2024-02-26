@@ -21,16 +21,13 @@ function Tile(props){
 
     return(
       <div >
-      {/* <Slide left> */}
-        <h1 className="tile">{props.title}</h1>
-      {/* </Slide> */}
-      {/* <Slide right> */}
-            
+        <div className="tile">
+          <h1 >{props.title}</h1>
+        </div>
             <div className="minitile-area">
             {data.map((item, index) => (
           <MiniTile key={index} {...item} />
         ))}
-      {/* </Slide> */}
             </div>
         </div>
        

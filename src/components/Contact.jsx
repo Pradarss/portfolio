@@ -20,18 +20,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add code to handle form submission (e.g., send data to a server or API)
     console.log(formData);
   };
 
   return (
-    <Box style={{ padding: '20px', justifyContent: 'center', alignItems: 'center', display: 'grid' }}>
+    <Box style={{ padding: '10rem', justifyContent: 'center', alignItems: 'center', display: 'grid' , borderTop: '2px dotted black'}}>
       <Typography variant="h4" gutterBottom style={{display: 'flex', justifyContent: 'center'}}>Contact Me</Typography>
       <form onSubmit={handleSubmit}>
         <TextField
           fullWidth
           label="Name"
-          // variant="outlined"
+          variant="outlined"
           margin="normal"
           name="name"
           value={formData.name}
@@ -41,7 +40,7 @@ const Contact = () => {
         <TextField
           fullWidth
           label="Email"
-          // variant="outlined"
+          variant="outlined"
           margin="normal"
           type="email"
           name="email"
@@ -52,7 +51,7 @@ const Contact = () => {
         <TextField
           fullWidth
           label="Subject"
-          // variant="outlined"
+          variant="outlined"
           margin="normal"
           name="subject"
           value={formData.subject}
@@ -64,7 +63,7 @@ const Contact = () => {
           multiline
           rows={4}
           label="Message"
-          // variant="outlined"
+          variant="outlined"
           margin="normal"
           name="message"
           value={formData.message}
