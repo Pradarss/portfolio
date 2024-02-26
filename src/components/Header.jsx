@@ -11,7 +11,7 @@ const Header = () => {
     <StyledAppbar position="static">
       <StyledToolbar>
         <h1>
-          Adarsh verma
+          Adarsh
         </h1>
         <LinksArea>
             <IconButton href="https://www.linkedin.com/in/adarshverma001/" target="_blank" rel="noopener noreferrer" color="inherit">
