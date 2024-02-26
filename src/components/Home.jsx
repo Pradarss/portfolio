@@ -17,14 +17,14 @@
 import { Box } from '@mui/material';
 import {Button }from '@mui/material';
 import React from 'react';
-import { Zoom } from 'react-reveal';
-import { Fade } from 'react-reveal';
+// import { Zoom } from 'react-reveal';
+// import { Fade } from 'react-reveal';
 
 function Home() {
   return (
     <div className="home">
       <div className="home-content">
-      <Fade left>
+      {/* <Fade left> */}
         <div className="home-left">
           <h1>Hi, I am Adarsh</h1>
           
@@ -33,9 +33,9 @@ function Home() {
           <Button>Download CV</Button>
           </div>
         </div>
-      </Fade>
+      {/* </Fade> */}
         
-        <Zoom>
+        {/* <Zoom> */}
           <div className="home-right">
           {/* <img
             src="../src../portfolio/public/assets/toon pic.jpeg"
@@ -43,7 +43,7 @@ function Home() {
             className="avatar"
           /> */}
         </div>
-        </Zoom>
+        {/* </Zoom> */}
         
       </div>
     </div>

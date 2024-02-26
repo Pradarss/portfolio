@@ -1,8 +1,8 @@
 import MiniTile from "./MiniTile";
 import { projects, skills, education, certification } from '../minitiles'; 
-import { Fade } from "react-reveal";
-import { Flip } from "react-reveal";
-import { Slide } from "react-reveal";
+// import { Fade } from "react-reveal";
+// import { Flip } from "react-reveal";
+// import { Slide } from "react-reveal";
 
 function Tile(props){
 
@@ -21,16 +21,16 @@ function Tile(props){
 
     return(
       <div >
-      <Slide left>
+      {/* <Slide left> */}
         <h1 className="tile">{props.title}</h1>
-      </Slide>
+      {/* </Slide> */}
+      {/* <Slide right> */}
             
             <div className="minitile-area">
             {data.map((item, index) => (
-      <Slide right>
           <MiniTile key={index} {...item} />
-      </Slide>
         ))}
+      {/* </Slide> */}
             </div>
         </div>
        
