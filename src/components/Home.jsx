@@ -11,7 +11,9 @@ function Home() {
           <a href='https://drive.google.com/file/d/10K7AH2JE6NboaDV6IbDeLsZPl2tASKyG/view?usp=drive_link' target="_blank" rel="noreferrer">Download CV</a>
           </div>
         </div>
-          <div className="home-right"></div>
+          <div className="home-right">
+            <img src='/assets/toonpic.jpg' alt='my-picture'></img>
+          </div>
       </div>
     </div>
   );

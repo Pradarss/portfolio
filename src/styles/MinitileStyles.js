@@ -28,7 +28,7 @@ export const StyledMiniTile = styled(Card)({
     backgroundPosition: 'center',
     textAlign: 'center',
     display: 'flex',
-    flexDirection: 'column',
+    // flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     padding: '20px',
@@ -37,4 +37,5 @@ export const StyledMiniTile = styled(Card)({
       opacity: 0.8,
     },
     borderRadius: '10%',
+    margin: '2vw'
   });
