@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <Box style={{ padding: '10rem', justifyContent: 'center', alignItems: 'center', display: 'grid' , borderTop: '2px dotted black'}}>
+    <Box style={{  justifyContent: 'center', alignItems: 'center', display: 'grid' , borderTop: '2px dotted black'}}>
       <Typography variant="h4" gutterBottom style={{display: 'flex', justifyContent: 'center'}}>Contact Me</Typography>
       <form onSubmit={handleSubmit}>
         <TextField
