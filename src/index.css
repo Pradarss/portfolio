@@ -64,7 +64,7 @@ li a:hover {
 
 .home-left h1{
   /* width: 50vw; */
-  height: 42.5vh;
+  height: 40vh;
   justify-content: center;
   align-items: flex-end;
   display: flex;
@@ -230,6 +230,7 @@ button:hover {
   color: #fff;
   padding: 40px 0;
   text-align: center;
+  height: 20vh;
 }
 
 .footer-content {
@@ -289,3 +290,46 @@ button:hover {
   margin-top: 20px;
   font-size: 0.9rem;
 }
+
+@media screen and (min-width: 1600px) {
+  .home-left h1{
+    /* width: 50vw; */
+    height: 25vh;
+  }
+
+  .tile h1{
+    font-size: 3rem;
+  }
+
+  .minitile h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  .minitile p {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .home-left h1{
+    /* width: 50vw; */
+    height: 18vh;
+  }
+
+  .tile h1{
+    font-size: 2.5rem;
+  }
+
+  .minitile h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  
+  .minitile p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
