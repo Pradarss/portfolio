@@ -12,7 +12,7 @@ function Home() {
           </div>
         </div>
           <div className="home-right">
-            <img src='/assets/toonpic.jpg' alt='my-picture'></img>
+            <img src='/assets/toonpic.jpg' alt='myAvatar'></img>
           </div>
       </div>
     </div>
