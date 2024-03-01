@@ -333,3 +333,60 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+  .home-left h1{
+    /* width: 50vw; */
+    height: 22vh;
+  }
+
+  .tile h1{
+    font-size: 2.5rem;
+  }
+
+  .minitile h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  
+  .minitile p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .home-content {
+    display: block;
+    padding: 1rem;
+    border-bottom: 2px dotted black;
+  }
+
+  .home-right img{
+    width: 60%;
+    margin-top: 15px;
+  }
+
+  .home-left a{
+    font-size: 1rem;
+  }
+
+  .home-left h1{
+    /* width: 50vw; */
+    height: 12vh;
+  }
+
+  .tile h1{
+    font-size: 1.8rem;
+  }
+
+  .minitile h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .minitile p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
