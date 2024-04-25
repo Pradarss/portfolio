@@ -5,14 +5,18 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { LinksArea, StyledAppbar, StyledToolbar } from '../styles/HeaderStyles';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   return (
     <StyledAppbar position="static">
       <StyledToolbar>
-        <h1>
-          Adarsh
-        </h1>
+        <motion.h1 className='headerTitle'
+        animate={{x : 0,}}
+        initial= {{x : 120,}}
+        transition={{delay: 0.1}}>
+              Adarsh
+        </motion.h1>
         <LinksArea>
             <IconButton href="https://www.linkedin.com/in/adarshverma001/" target="_blank" rel="noopener noreferrer" color="inherit">
           <LinkedInIcon />

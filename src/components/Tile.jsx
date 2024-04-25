@@ -3,6 +3,8 @@ import { projects, skills, education, certification } from '../minitiles';
 // import { Fade } from "react-reveal";
 // import { Flip } from "react-reveal";
 // import { Slide } from "react-reveal";
+import { motion } from 'framer-motion';
+
 
 function Tile(props){
 

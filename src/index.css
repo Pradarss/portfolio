@@ -14,10 +14,11 @@ header {
   /* height: 3rem; */
 }
 
-header h1 {
-  font-size: 2rem;
+.headerTitle {
+  font-size: 2rem ;
   margin: 0;
   text-decoration: underline;
+  color: white;
 }
 
 ul {
@@ -209,7 +210,14 @@ textarea {
   height: 150px;
 }
 
-button {
+.ContactButtonDiv{
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactButton {
   background-color: #007acc;
   color: #fff;
   padding: 10px 20px;
@@ -218,10 +226,12 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: relative;
-  left: 35rem;
+  /* left: 35rem; */
+  /* height: 5rem; */
+  /* display: flex; */
 }
 
-button:hover {
+.ContactButton:hover {
   background-color: #005d99;
 }
 

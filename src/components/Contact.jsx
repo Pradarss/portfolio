@@ -1,6 +1,7 @@
 // Contact.js
 import React, { useState } from 'react';
 import { Box, Typography, TextField, Button } from '@mui/material';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -70,8 +71,8 @@ const Contact = () => {
           onChange={handleChange}
           required
         />
-        <div >
-        <Button type="submit" variant="contained" color="primary" style={{left: '50vh'}}>Submit</Button>
+        <div className='ContactButtonDiv'>
+        <motion.Button className='ContactButton' type="submit"  animate={{x:0}} initial={{x: '-100vw'}} >Submit</motion.Button>
         </div>
       </form>
     </Box>
