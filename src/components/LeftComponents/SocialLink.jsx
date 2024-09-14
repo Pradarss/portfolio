@@ -8,7 +8,7 @@ function SocialLink(){
     return(
         <SocailLinkArea>
           <a href="https://www.instagram.com/adarsh.v0/" target="_blank" rel="noopener noreferrer">
-              <InstagramIcon sx={Iconstyles}/>
+              <InstagramIcon  sx={Iconstyles}/>
             </a>
 
             <a href="https://www.linkedin.com/in/adarshverma001/" target="_blank" rel="noopener noreferrer">

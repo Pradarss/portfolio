@@ -3,10 +3,10 @@ import { Typography } from '@mui/material';
 import { CustomLi, CustomLine, CustomLink, CustomUl } from '../styles';
 
 const sections = [
-  { name: 'Home', href: '#home' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Certifications', href: '#certifications' },
+  { name: 'Home', href: '#home'},
+  { name: 'Projects', href: '#projects'},
+  { name: 'Skills', href: '#skills'},
+  { name: 'Certifications', href: '#certifications'},
 ];
 
 const InteractiveList = () => {
