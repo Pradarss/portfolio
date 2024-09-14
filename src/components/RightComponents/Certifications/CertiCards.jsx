@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import { CardContent, CardMedia, Typography } from "@mui/material";
 import { CertiCardArea } from "../../styles";
 
 function CertiCards({image, title, para}){

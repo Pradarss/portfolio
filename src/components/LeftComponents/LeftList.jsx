@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { CustomLi, CustomLine, CustomLink, CustomUl } from '../styles';
 
 const sections = [

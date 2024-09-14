@@ -1,6 +1,5 @@
 import { Link, Typography } from "@mui/material";
 import { ProjectButton, ProjectButtonArea, ProjectCardArea, ProjectCardImage } from "../../styles";
-import { color } from "framer-motion";
 
 function ProjectCard({image,title,para,tech,href}){
     return(

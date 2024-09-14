@@ -7,7 +7,6 @@ import { ThemeProvider, createTheme, useMediaQuery } from "@mui/material";
 function App() {
   const theme = createTheme(); // Create or use a default theme
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-  const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
 
   return (
     <ThemeProvider theme={theme}> {/* Wrap your app in ThemeProvider */}

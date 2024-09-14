@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { HomeArea } from "../styles";
-import Ball from "./Ball";
 
 function Home(){
 

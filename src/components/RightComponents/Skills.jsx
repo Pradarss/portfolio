@@ -1,4 +1,4 @@
-import { Chip, Divider, Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import { SkillsArea, SkillsButton, SkillsButtonArea } from "../styles";
 
 function Skills({title, skills}){

@@ -1,6 +1,4 @@
-import { BookRounded } from "@mui/icons-material";
 import { Box, Button, Card, createTheme, Link, styled } from "@mui/material";
-import { color } from "framer-motion";
 
 export const theme = createTheme({
     breakpoints: {

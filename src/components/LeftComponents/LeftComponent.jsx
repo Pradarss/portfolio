@@ -1,5 +1,5 @@
 import { Link, Typography } from "@mui/material";
-import { LeftComponentArea, BulletLine, Buttonstyle } from "../styles";
+import { LeftComponentArea, Buttonstyle } from "../styles";
 import LeftList from "./LeftList";
 import SocialLink from "./SocialLink";
 
