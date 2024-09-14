@@ -5,7 +5,17 @@ import { BackgroundArea } from "./styles";
 import { ThemeProvider, createTheme, useMediaQuery } from "@mui/material";
 
 function App() {
-  const theme = createTheme(); // Create or use a default theme
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 500,
+        md: 900,
+        lg: 1200,
+        xl: 1536,
+      },
+    },
+  }); // Create or use a default theme
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (

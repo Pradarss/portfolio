@@ -4,7 +4,7 @@ export const theme = createTheme({
     breakpoints: {
       values: {
         xs: 0,
-        sm: 600,
+        sm: 500,
         md: 900,
         lg: 1200,
         xl: 1536,
@@ -103,7 +103,7 @@ export const SocailLinkArea = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "space-between",
     [theme.breakpoints.down('sm')]: {
-        width: "15rem"
+        width: "10rem"
     },
 }))
 
@@ -134,7 +134,8 @@ export const HomeArea = styled(Box)(({ theme }) => ({
     justifyContent: "center",
     alignItems: "center",
     [theme.breakpoints.down('sm')]: {
-        height: "83vh"
+        height: "71vh",
+        marginTop: "5rem"
     },
 }))
 
