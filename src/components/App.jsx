@@ -1,23 +1,33 @@
 import React from "react";
-import Header from './Header';
-import Footer from './Footer';
-import Contact from './Contact';
-import Home from './Home';
-import Tile from './Tile';
-import { tiles } from '../tiles';
+import LeftComponent from "./LeftComponents/LeftComponent";
+import RightComponent from "./RightComponents/RightComponent";
+import { BackgroundArea } from "./styles";
+import { ThemeProvider, createTheme, useMediaQuery } from "@mui/material";
 
-function App(){
-    return (
-        <div>
-        <Header />
-        <Home />
-        {tiles.map((tile, index) => (
-        <Tile key={index} title={tile} />
-      ))}
-        <Contact />
-        <Footer />
-        </div>
-    )
+function App() {
+  const theme = createTheme(); // Create or use a default theme
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+
+  return (
+    <ThemeProvider theme={theme}> {/* Wrap your app in ThemeProvider */}
+      <>
+        {isSmallScreen ? (
+          <BackgroundArea>
+            <LeftComponent />
+            <RightComponent />
+          </BackgroundArea>
+        ) : (
+          <>
+            <LeftComponent />
+            <BackgroundArea>
+              <RightComponent />
+            </BackgroundArea>
+          </>
+        )}
+      </>
+    </ThemeProvider>
+  );
 }
 
 export default App;
