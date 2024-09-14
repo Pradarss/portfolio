@@ -15,11 +15,11 @@ function App() {
         xl: 1536,
       },
     },
-  }); // Create or use a default theme
+  }); 
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <ThemeProvider theme={theme}> {/* Wrap your app in ThemeProvider */}
+    <ThemeProvider theme={theme}> 
       <>
         {isSmallScreen ? (
           <BackgroundArea>

@@ -41,9 +41,7 @@ const InteractiveList = () => {
           <CustomLink
             href={section.href}
             sx={{
-              // fontWeight: hovered === index || selectedSection === index ? 'bold' : 'normal',
               color: hovered === index || selectedSection === index ? '#ffc300' : 'white',
-              // color: hovered === index || selectedSection === index ? '#ffc300' : 'white',
             }}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
