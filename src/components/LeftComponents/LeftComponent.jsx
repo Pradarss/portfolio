@@ -42,7 +42,7 @@ function LeftComponent(){
             
             <LeftList />
             
-            <Link href="https://drive.google.com/file/d/13ypp7xASxn1ArTtQcVJ_XcG2zfwiv-Ly/view?usp=drivesdk" target="_blank" sx={{textDecoration: "none"}}>
+            <Link href="https://drive.google.com/file/d/1-DHrPXmngAQOzfN-a4RWGCisYl699F8O/view?usp=drivesdk" target="_blank" sx={{textDecoration: "none"}}>
                 <MotionButton 
                     initial={{ opacity: 0, scale: 0.8 }} 
                     animate={{ opacity: 1, scale: 1 }} 
