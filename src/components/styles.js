@@ -1,4 +1,5 @@
 import { Box, Button, Card, createTheme, Link, styled } from "@mui/material";
+import zIndex from "@mui/material/styles/zIndex";
 
 export const theme = createTheme({
     breakpoints: {
@@ -13,15 +14,105 @@ export const theme = createTheme({
   });
 
 //Main--------------------------------------------------------------------------->
+// export const BackgroundArea = styled(Box)(({ theme }) => ({
+//     display: 'flex',
+//     background: "linear-gradient(180deg,#032b43,#136f63)", // Gradient background
+//     alignItems: "center",
+//     justifyContent: "center",
+//     minHeight: "100vh", // Ensure full height
+//     [theme.breakpoints.down('sm')]: {
+//         display: "block",
+//         background: "linear-gradient(135deg, #9333EA, #1E3A8A)", // Reversed gradient for smaller screens
+//     },
+// }));
+
+// export const BackgroundArea = styled(Box)(({ theme }) => ({
+//     display: 'flex',
+//     background: "linear-gradient(135deg, #032b43, #136f63, #3B82F6)", // Base gradient
+//     backgroundSize: "400% 400%", // Ensure smooth animation
+//     animation: "gradient-animation 10s ease infinite", // Animation applied
+//     alignItems: "center",
+//     justifyContent: "center",
+//     minHeight: "100vh", // Ensure full height
+//     [theme.breakpoints.down('sm')]: {
+//         display: "block",
+//         background: "linear-gradient(135deg, #9333EA, #3B82F6, #1E3A8A)",
+//     },
+//     "@keyframes gradient-animation": {
+//         "0%": {
+//             backgroundPosition: "0% 50%",
+//         },
+//         "50%": {
+//             backgroundPosition: "100% 50%",
+//         },
+//         "100%": {
+//             backgroundPosition: "0% 50%",
+//         },
+//     },
+// }));
+
 export const BackgroundArea = styled(Box)(({ theme }) => ({
-    display: 'flex',
-    backgroundColor: "#101E43",
-    alignItems : "center",
+    position: "relative",
+    display: "flex",
+    backgroundImage: `url("/assets/image.jpg")`,
+    backgroundSize: "cover", 
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+    backgroundBlendMode: "s",
+    animation: "gradient-animation 10s ease infinite",
+    alignItems: "center",
     justifyContent: "center",
-    [theme.breakpoints.down('sm')]: {
-       display: "block"
+    // minHeight: "100vh", 
+    overflow: "hidden", 
+    zIndex:1,
+    [theme.breakpoints.down("sm")]: {
+        display: "block",
+        background: "#1E3A8A",
     },
-}))
+
+    "&::before, &::after": {
+        content: '""',
+        position: "absolute",
+        borderRadius: "50%",
+        background: "rgba(255, 255, 255, 0.15)", 
+        animation: "move-shape 15s infinite ease-in-out",
+        zIndex: -2,
+    },
+
+    // Shape 1
+    "&::before": {
+        width: "500px",
+        height: "500px",
+        top: "2.45%",
+        left: "51%",
+        animationDelay: "0s",
+    },
+
+    // Shape 2
+    "&::after": {
+        width: "500px",
+        height: "500px",
+        top: "20%",
+        position: "fixed",
+        animationDelay: "5s",
+        background: "rgba(255, 255, 255, 0.1)",
+    },
+
+    "@keyframes move-shape": {
+        "0%": {
+            transform: "translate(0, 0) scale(1)",
+        },
+        "50%": {
+            transform: "translate(0, 0) scale(1.1)",
+        },
+        "100%": {
+            transform: "translate(0, 0) scale(1)",
+        },
+    },
+}));
+
+
+
 
 //LeftComponent---------------------------------------------------------------------------->
 export const LeftComponentArea = styled(Box)(({ theme }) => ({
@@ -32,7 +123,8 @@ export const LeftComponentArea = styled(Box)(({ theme }) => ({
     color: "white",
     position: "fixed",
     left: "10rem",
-    top: "5rem",
+    top: "5rem",   
+    zIndex: 2,
     [theme.breakpoints.down('sm')]: {
         width: "50%",
         position: "relative",
@@ -131,7 +223,7 @@ export const HomeArea = styled(Box)(({ theme }) => ({
 export const ProjectArea = styled(Box)(({ theme }) => ({
     width: "auto",
     height: "auto",
-    marginBottom: "10rem"
+    marginBottom: "10rem",
 }))
 
 export const ProjectCardArea = styled(Box)(({ theme }) => ({
