@@ -15,6 +15,8 @@ function Home(){
       position: "relative",
       maxWidth: "500px", 
       maxHeight: "500px", 
+      border: "20px solid rgba(255, 255, 255, 0.15)",
+      borderRadius: "50%"
     }}
   >
       <motion.div

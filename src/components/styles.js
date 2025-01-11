@@ -25,39 +25,27 @@ export const BackgroundArea = styled(Box)(({ theme }) => ({
     animation: "gradient-animation 10s ease infinite",
     alignItems: "center",
     justifyContent: "center",
-    // minHeight: "100vh", 
     overflow: "hidden", 
     zIndex:1,
     [theme.breakpoints.down("sm")]: {
         display: "block",
-        background: "#1E3A8A",
     },
 
     "&::before, &::after": {
         content: '""',
         position: "absolute",
         borderRadius: "50%",
-        background: "rgba(255, 255, 255, 0.15)", 
-        animation: "move-shape 15s infinite ease-in-out",
+        background: "rgba(255, 255, 255, 0.15)",    
+        animation: "move-shape 3s infinite ease-in-out",
         zIndex: -2,
-    },
-
-    // Shape 1
-    "&::before": {
-        width: "500px",
-        height: "500px",
-        top: "2.45%",
-        left: "51%",
-        animationDelay: "0s",
     },
 
     // Shape 2
     "&::after": {
-        width: "500px",
-        height: "500px",
-        top: "20%",
+        width: "600px",
+        height: "600px",
+        top: "12%",
         position: "fixed",
-        animationDelay: "5s",
         background: "rgba(255, 255, 255, 0.1)",
     },
 
