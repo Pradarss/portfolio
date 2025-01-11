@@ -1,19 +1,7 @@
-import { useState } from "react";
 import { HomeArea } from "../styles";
 import {motion} from 'framer-motion';
 
 function Home(){
-
-    const [Hovered, setHovered] = useState(true);
-
-    function HandleHover(){
-        setHovered(null);
-    }
-
-    function HandleNotHover(){
-        setHovered(true);
-    }
-
     return(
         <HomeArea>
         <motion.div
@@ -21,8 +9,6 @@ function Home(){
     animate={{ scale: 1, rotate: 0 }}
     whileHover={{ scale: 1.1 }}
     transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
-    onMouseEnter={HandleHover}
-    onMouseLeave={HandleNotHover}
     style={{
       height: "60%",
       width: "76%",
