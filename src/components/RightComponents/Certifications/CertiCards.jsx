@@ -19,7 +19,7 @@ function CertiCards({ image, title, para }) {
       <CardMedia
         sx={{ borderRadius: "20px" }}
         component="img"
-        height="200"
+        height="500"
         image={image}
       />
       <CardContent>

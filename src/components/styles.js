@@ -147,7 +147,7 @@ export const Iconstyles = {
 //RightComponent------------------------------------------------------------------------->
 
 export const RightComponentArea = styled(Box)(({ theme }) => ({
-    width: "40vw",
+    width: "45vw",
     height: "100%",
     marginLeft: "35%",
     [theme.breakpoints.down('sm')]: {

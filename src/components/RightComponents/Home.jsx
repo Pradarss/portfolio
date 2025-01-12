@@ -10,8 +10,8 @@ function Home(){
     whileHover={{ scale: 1.1 }}
     transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
     style={{
-      height: "60%",
-      width: "76%",
+      height: "70%",
+      width: "77%",
       position: "relative",
       maxWidth: "500px", 
       maxHeight: "500px", 
