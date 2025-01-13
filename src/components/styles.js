@@ -131,8 +131,9 @@ export const Buttonstyle = styled(Button)(({ theme }) => ({
 }))
 
 export const SocailLinkArea = styled(Box)(({ theme }) => ({
-    paddingTop: "5rem",
-    width: "8vw",
+    paddingTop: "2rem",
+    paddingLeft: "0.5rem",
+    width: "10vw",
     display: "flex",
     justifyContent: "space-between",
     [theme.breakpoints.down('sm')]: {
