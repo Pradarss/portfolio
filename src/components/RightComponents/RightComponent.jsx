@@ -12,7 +12,7 @@ export const skills = [
   
     {
         title: 'JavaScript Frameworks/Libraries',
-        skills: ["React JS","React Native", "Bootstrap", "jQuery", "Framer-motion","GSAP"]
+        skills: ["React JS","React Native","MUI", "Bootstrap", "jQuery"]
     },
     {
         title: 'Back End',
