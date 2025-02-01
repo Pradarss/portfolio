@@ -12,7 +12,7 @@ export const skills = [
   
     {
         title: 'JavaScript Frameworks/Libraries',
-        skills: ["React JS", "Bootstrap", "jQuery", "Framer-motion","GSAP"]
+        skills: ["React JS","React Native", "Bootstrap", "jQuery", "Framer-motion","GSAP"]
     },
     {
         title: 'Back End',
@@ -21,7 +21,7 @@ export const skills = [
   
     {
         title: 'Database',
-        skills: ["MongoDB" , "MySQL"]
+        skills: ["MongoDB" , "MySQL", "SQLite"]
     },
   
     {
