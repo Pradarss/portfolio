@@ -2,7 +2,7 @@ import { CertificationsArea } from "../../styles";
 import CertiCards from "./CertiCards";
 const certifications = [
   {
-    image: "/assets/webdev.png",
+    image: "/assets/ReactNative.png",
     title: 'React Native - The practical guide [2025]',
     para: 'The React Native Development course is an in-depth program designed to equip learners with the skills to build powerful cross-platform mobile applications. Covering the fundamentals of React Native, the course delves into key concepts like navigation, state management, and working with native APIs to create fully functional apps for both iOS and Android. It also emphasizes best practices in mobile app development, including performance optimization, debugging, and deploying to app stores. By the end of the course, participants are well-prepared to develop seamless, user-friendly mobile applications that run efficiently across platforms.'
   },
