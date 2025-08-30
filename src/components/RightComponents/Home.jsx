@@ -21,7 +21,7 @@ function Home(){
   >
       <motion.div
         style={{
-          backgroundImage: "url('/assets/Mypic2.jpg')",
+          backgroundImage: "url('/assets/MyPic3/jpg')",
           height: "100%",
           width: "100%",
           backgroundSize: "cover",
