@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 function Skills({ title, skills }) {
     const Button = useRef(null);
-    const isInView = useInView(Button, { once: true });
+    // const isInView = useInView(Button, { once: true });
     const MotionSkillsButton = motion(SkillsButton);
 
     return (
