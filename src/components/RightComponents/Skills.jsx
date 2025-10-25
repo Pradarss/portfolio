@@ -17,7 +17,8 @@ function Skills({ title, skills }) {
                     <MotionSkillsButton
                         ref={Button}
                         initial={{ scale: 0 }}
-                        animate={{ scale: isInView ? 1 : 0 }}
+                        whileInView={{ scale: 1 }} 
+                        viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.2, delay: index * 0.2, ease: "easeOut" }} 
                         key={index}
                         whileHover={{ scale: 0.9, backgroundColor: "#ffc300" }}

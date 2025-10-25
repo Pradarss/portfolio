@@ -229,6 +229,21 @@ export const SkillsButtonArea = styled(Box)(({ theme }) => ({
     height: "auto",
     display: "flex",
     gap: "1rem",
+    overflowX: "auto",
+    flexWrap: "nowrap",
+     "&::-webkit-scrollbar": {
+    height: "6px",
+  },
+  "&::-webkit-scrollbar-track": {
+    background: "transparent",
+  },
+  "&::-webkit-scrollbar-thumb": {
+    borderRadius: "3px",
+    background: "linear-gradient(to right, #ff7e5f, #feb47b)",
+  },
+
+  scrollbarWidth: "thin",
+  scrollbarColor: "#ffc300 transparent",
 }))
 
 export const SkillsButton = styled(Box)(({ theme }) => ({
@@ -238,7 +253,9 @@ export const SkillsButton = styled(Box)(({ theme }) => ({
     justifyContent:"center",
     alignItems: "center",
     display: "flex",
-    minWidth: "3rem",
+    // minWidth: "3rem",
+    minWidth: "8rem",
+    flexWrap: "nowrap",
     '&:hover' : {
         backgroundColor : "white",
     }
@@ -250,12 +267,14 @@ export const CertificationsArea = styled(Box)(({ theme }) => ({
     width: "auto",
     height: "auto",
     padding: "1rem",
+    objectFit: "contain"
 }))
 
 export const CertiCardArea = styled(Card)(({ theme }) => ({
     width: "auto",
     padding: "1rem",
     marginTop: "3rem",
+    objectFit: "contain",
     borderRadius: "20px",
     backgroundColor: "#f5f3f4",
 }))

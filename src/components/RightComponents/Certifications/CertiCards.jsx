@@ -17,7 +17,7 @@ function CertiCards({ image, title, para }) {
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
       <CardMedia
-        sx={{ borderRadius: "20px" }}
+        sx={{ borderRadius: "20px", objectFit:"contain" }}
         component="img"
         height="500"
         image={image}
