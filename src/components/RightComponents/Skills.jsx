@@ -1,11 +1,10 @@
 import { Divider, Typography } from "@mui/material";
 import { SkillsArea, SkillsButton, SkillsButtonArea } from "../styles";
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from "react";
 
 function Skills({ title, skills }) {
     const Button = useRef(null);
-    // const isInView = useInView(Button, { once: true });
     const MotionSkillsButton = motion(SkillsButton);
 
     return (
